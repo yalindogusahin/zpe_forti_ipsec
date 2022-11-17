@@ -1,0 +1,28 @@
+---
+ - name: Nodegrid
+   hosts: nodegrid
+   gather_facts: false
+   connection: local
+
+   tasks:
+     - name: Configure Nodegrid
+       block:
+        - name: Create Temporary Folders
+          file:
+             path: "{{ item }}"
+             state: directory
+          with_items:
+                - /tmp/config/
+        - name: Create Ike Profile
+          template:
+              src: "{{ item }}.j2"
+              dest: "/tmp/config/{{ item }}.cli"
+          with_items:
+           - test
+        - name: Import Ike Profile
+          shell: "cli import_settings --file /tmp/config/{{ item }}.cli"
+          become: yes
+          become_method: su
+          become_user: admin
+          with_items:
+            - test

@@ -1,0 +1,32 @@
+---
+ - name: Nodegrid
+   hosts: nodegrid
+   gather_facts: false
+   connection: local
+   vars_prompt:
+      - name: name
+        prompt: What is your tunnel name?
+        private: no
+      - name: right_address
+        prompt: What is your forti public IP?
+        private: no
+      - name: secret
+        prompt: What is your secret key?
+        private: no
+      - name: left_address
+        prompt: Which interface do you want to use for IPSec tunnel on Nodegrid?
+        private: no
+      - name: left_source_ip_address
+        prompt: ZPE ip address on tunnell
+        private: no
+
+   tasks:
+     - name: Print
+       debug:
+         msg: "This is {{ item }}"
+       with_items:
+          - "{{ name }}"
+          - "{{ right_address }}"
+          - "{{ secret }}"
+          - "{{ left_address }}"
+          - "{{ left_source_ip_address }}"
