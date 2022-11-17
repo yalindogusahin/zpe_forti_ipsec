@@ -7,18 +7,28 @@
       - name: name
         prompt: What is your tunnel name?
         private: no
-      - name: right_address
-        prompt: What is your forti public IP?
-        private: no
       - name: secret
         prompt: What is your secret key?
         private: no
-      - name: left_address
-        prompt: Which interface do you want to use for IPSec tunnel on Nodegrid?
+      - name: left_ip_address
+        prompt: Please enter Public IP address of the Nodegrid
         private: no
       - name: left_source_ip_address
-        prompt: ZPE ip address on tunnell
+        prompt: ZPE ip address on tunnel
         private: no
+      - name: left_subnet
+        prompt: Please enter subnet of the Nodegrid side (172.16.160.0/255.255.255.0)
+        private: no
+      - name: right_address
+        prompt: Please type Fortigate's public IP address
+        private: no
+      - name: right_source_ip_address
+        prompt: Fortigate's WAN IP Address
+        private: no
+      - name: right_subnet
+        prompt: Please enter subnet of the Fortigate side (192.168.1.0/255.255.255.0)
+        private: no
+
 
    tasks:
      - name: Print
@@ -26,7 +36,34 @@
          msg: "This is {{ item }}"
        with_items:
           - "{{ name }}"
-          - "{{ right_address }}"
           - "{{ secret }}"
-          - "{{ left_address }}"
+          - "{{ left_ip_address }}"
           - "{{ left_source_ip_address }}"
+          - "{{ left_subnet }}"
+          - "{{ right_ip_address }}"
+          - "{{ right_source_ip_address }}"
+          - "{{ right_subnet }}"
+
+     - name: Configure Nodegrid
+       block:
+        - name: Create Temporary Folders
+          file:
+             path: "{{ item }}"
+             state: directory
+          with_items:
+                - /tmp/config/
+
+
+        - name: Create IPSec Tunnel
+          template:
+              src: "{{ item }}.j2"
+              dest: "/tmp/config/{{ item }}.cli"
+          with_items:
+           - ipsec_tunnel
+        - name: Import IPSec Tunnel
+          shell: "cli import_settings --file /tmp/config/{{ item }}.cli"
+          become: yes
+          become_method: su
+          become_user: admin
+          with_items:
+            - ipsec_tunnel
