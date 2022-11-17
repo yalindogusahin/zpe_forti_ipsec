@@ -1,0 +1,16 @@
+/settings/ipsec/ike_profile/forti profile_name=forti
+/settings/ipsec/ike_profile/forti ike_version=ikev2
+/settings/ipsec/ike_profile/forti phase_1_mode=main
+/settings/ipsec/ike_profile/forti phase_1_encryption=aes256
+/settings/ipsec/ike_profile/forti phase_1_authentication=sha256
+/settings/ipsec/ike_profile/forti phase_1_diffie-hellman_group=group_21
+/settings/ipsec/ike_profile/forti phase_1_lifetime=3600
+/settings/ipsec/ike_profile/forti phase_2_authentication_protocol=esp
+/settings/ipsec/ike_profile/forti phase_2_encryption=aes256
+/settings/ipsec/ike_profile/forti phase_2_authentication=sha2_512
+/settings/ipsec/ike_profile/forti phase_2_pfs_group=group_21
+/settings/ipsec/ike_profile/forti phase_2_lifetime=28800
+/settings/ipsec/ike_profile/forti enable_dead_peer_detection=yes
+/settings/ipsec/ike_profile/forti dead_peer_detection_number_of_retries=5
+/settings/ipsec/ike_profile/forti dead_peer_detection_interval=10
+/settings/ipsec/ike_profile/forti dead_peer_detection_action=restart
