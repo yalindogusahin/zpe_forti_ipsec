@@ -1,7 +1,7 @@
 ---
  - name: Nodegrid
    hosts: nodegrid
-   gather_facts: false
+   gather_facts: true
    connection: local
    vars_prompt:
       - name: name
@@ -65,7 +65,9 @@
           become: yes
           become_method: su
           become_user: admin
-          register: output
           with_items:
             - ipsec_tunnel
-        - debug: var=output.stdout_lines
+          register: output
+        - name: Show output
+          debug:
+            msg: "{{ output }}"
