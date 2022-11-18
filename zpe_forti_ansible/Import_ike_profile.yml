@@ -18,11 +18,11 @@
               src: "{{ item }}.j2"
               dest: "/tmp/config/{{ item }}.cli"
           with_items:
-           - test
+           - ike_profile_settings
         - name: Import Ike Profile
           shell: "cli import_settings --file /tmp/config/{{ item }}.cli"
           become: yes
           become_method: su
           become_user: admin
           with_items:
-            - test
+            - ike_profile_settings
