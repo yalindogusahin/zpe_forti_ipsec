@@ -68,4 +68,4 @@
           register: output
           with_items:
             - ipsec_tunnel
-          debug: var=output.stdout_lines
+        - debug: var=output.stdout_lines
