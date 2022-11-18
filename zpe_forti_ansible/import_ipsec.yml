@@ -40,7 +40,7 @@
           - "{{ left_ip_address }}"
           - "{{ left_source_ip_address }}"
           - "{{ left_subnet }}"
-          - "{{ right_ip_address }}"
+          - "{{ right_address }}"
           - "{{ right_source_ip_address }}"
           - "{{ right_subnet }}"
 
