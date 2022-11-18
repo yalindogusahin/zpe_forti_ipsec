@@ -65,5 +65,7 @@
           become: yes
           become_method: su
           become_user: admin
+          register: output
           with_items:
             - ipsec_tunnel
+          debug: var=output.stdout_lines
