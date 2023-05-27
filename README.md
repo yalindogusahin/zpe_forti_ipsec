@@ -230,7 +230,7 @@ Go to Network::VPN::IPsec::Tunnel and click on "Add"
         
         Left ID = @zpe                               Right ID = @forti
         
-        Left Address = %wwan0                        Right Address = 176.88.237.48
+        Left Address = %wwan0                        Right Address = Forti Public IP Address
         
         Left Source IP Address = 172.16.160.1        Right Source IP Address = 192.168.254.3
         
