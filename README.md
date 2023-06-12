@@ -220,7 +220,7 @@ Go to Network::VPN::IPsec::Tunnel and click on "Add"
 
         Name = zpe                                  Authentication Method = Pre-Shared Key
         
-        Initiate Tunnel = Start                     Secret = Rr123456!
+        Initiate Tunnel = Start                     Secret = $YOURSECRET
         
         IKE Profile = Forti
         
