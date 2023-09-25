@@ -5,7 +5,7 @@ This guide provides step-by-step instructions for configuring an IPsec tunnel be
 ## Table of Contents
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
-- [Forti Configuration](#step-1-forti-configuration)
+- [Forti Configuration](#Forti Configuration)
   - [Create IPsec Tunnel](#1-create-ipsec-tunnel)
   - [Tunnel Configurations](#2-tunnel-configurations)
   - [Create Static Route](#3-create-static-route)
