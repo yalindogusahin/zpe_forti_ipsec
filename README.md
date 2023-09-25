@@ -131,8 +131,9 @@ Go to Network::Static Routes and click on "Create New"
     
 <img width="645" alt="Screen Shot 2022-09-30 at 16 40 42" src="https://user-images.githubusercontent.com/103506681/193282518-c622b075-40f2-40fd-8b91-6c2d0669f039.png">
 
-4 - 
-a)  Create IPv4 Policy
+### Create IPv4 Policy and Reverse Policy
+
+a-)
 
 Go under Policy & Objects::IPv4 Policy and click on "Create New"
 
