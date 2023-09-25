@@ -31,7 +31,7 @@ Before you begin, make sure you have the following:
 
 ## Forti Configuration
 
-## Create IPsec Tunnel
+### Create IPsec Tunnel
 
 Go Under VPN::IPsec Wizard
  
