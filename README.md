@@ -41,7 +41,7 @@ Go Under VPN::IPsec Wizard
     
 ![Screen Shot 2022-09-30 at 16 16 18](https://user-images.githubusercontent.com/103506681/193278033-e13c3c84-477c-4aa8-9e29-7e7443134e87.png)
 
-2 - Tunnel Configurations
+### Tunnel Configurations
     
     IP Version = IPv4
     
