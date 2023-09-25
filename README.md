@@ -5,18 +5,18 @@ This guide provides step-by-step instructions for configuring an IPsec tunnel be
 ## Table of Contents
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
-- [Forti Configuration](#asdf)
+- [Forti Configuration](#forti-configuration)
   - [Create IPsec Tunnel](#1-create-ipsec-tunnel)
   - [Tunnel Configurations](#2-tunnel-configurations)
   - [Create Static Route](#3-create-static-route)
   - [Create IPv4 Policy](#4a-create-ipv4-policy)
-- [Step 2: Nodegrid Configuration](#step-2-nodegrid-configuration)
+- [Nodegrid Configuration](#nodegrid-configuration)
   - [Create IKE Profile](#1-create-ike-profile)
   - [Creating the Tunnel](#2-creating-the-tunnel)
-- [Step 3: Testing the Tunnel](#step-3-testing-the-tunnel)
+- [Testing the Tunnel](#testing-the-tunnel)
 - [Useful Documentations](#useful-documentations)
 - [Conclusion](#conclusion)
-
+  
 ## Prerequisites
 
 Before you begin, make sure you have the following:
