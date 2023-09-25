@@ -1,6 +1,6 @@
 ## Introduction
 
-This guide provides step-by-step instructions for configuring an IPsec tunnel between a ZPE device and a FortiGate firewall. The setup ensures secure communication between the two devices.
+This guide provides step-by-step instructions for configuring an IPsec tunnel between a ZPE device and a FortiGate firewall. The setup ensures secure communication between the two devices. This repo also contains an [Ansible](https://www.ansible.com/) playbook. Which adds profile to the Nodegrid
 
 ## Prerequisites
 
