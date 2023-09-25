@@ -6,7 +6,7 @@ This guide provides step-by-step instructions for configuring an IPsec tunnel be
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Forti Configuration](#forti-configuration)
-  - [create-ipsec-tunnel-on-fortigate-fw](#create-ipsec-tunnel-on-fortigate-fw)
+  - [Create IPSec Tunnel](#create-ipsec-tunnel-on-fortigate-fw)
   - [Tunnel Configurations](#tunnel-configurations)
   - [Create Static Route](#create-static-route)
   - [Create IPv4 Policy](#4a-create-ipv4-policy)
