@@ -182,7 +182,7 @@ Go under Policy & Objects::IPv4 Policy and click on "Create New"
 <img width="910" alt="Screen Shot 2022-10-04 at 16 15 32" src="https://user-images.githubusercontent.com/103506681/193828898-bd59b37f-88be-4fb8-9c3f-074e72b33575.png">
 
     
-    b) Clone Reverse of Policy that we created for Local > VPN and name it VPN > Local
+b-) Clone Reverse of Policy that we created for Local > VPN and name it VPN > Local
     
 <img width="345" alt="Screen Shot 2022-09-30 at 16 46 47" src="https://user-images.githubusercontent.com/103506681/193284093-4396a0e1-902d-4c00-8688-bdaa808802a5.png">
 
