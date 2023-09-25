@@ -31,7 +31,7 @@ Before you begin, make sure you have the following:
 
 ## Forti Configuration
 
-### Create IPsec Tunnel
+### Create IPsec Tunnel on Fortigate FW
 
 Go Under VPN::IPsec Wizard
  
@@ -41,7 +41,7 @@ Go Under VPN::IPsec Wizard
     
 ![Screen Shot 2022-09-30 at 16 16 18](https://user-images.githubusercontent.com/103506681/193278033-e13c3c84-477c-4aa8-9e29-7e7443134e87.png)
 
-### Tunnel Configurations
+### Tunnel Configurations on Fortigate FW
     
     IP Version = IPv4
     
@@ -115,8 +115,8 @@ Go Under VPN::IPsec Wizard
 
 <img width="642" alt="Screen Shot 2022-09-30 at 16 36 37" src="https://user-images.githubusercontent.com/103506681/193281739-f1508862-d737-4911-a2a5-63fcd58e4645.png">
 
-3 - Create Static Route
-    
+### Create Static Route on Fortigate FW
+
 Go to Network::Static Routes and click on "Create New"
     
     Dynamic Gateway = Check
