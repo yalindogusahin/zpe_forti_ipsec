@@ -1,7 +1,18 @@
-# zpe_forti_ipsec
-IPSec between ZPE and Forti Gate
+## Introduction
 
-> **Note**
+This guide provides step-by-step instructions for configuring an IPsec tunnel between a ZPE device and a FortiGate firewall. The setup ensures secure communication between the two devices.
+
+## Prerequisites
+
+Before you begin, make sure you have the following:
+
+- Access to the FortiGate firewall with administrative privileges.
+- Access to the ZPE device with administrative privileges.
+- Knowledge of your ZPE device's public IP address (ZPE_PUBLIC_IP_ADDR).
+- Knowledge of your ISP interface name (ISP_INTERFACE).
+- A secure pre-shared key (password) for authentication.
+
+> **Note:** This guide assumes you have the necessary access and privileges on both devices.
 
 > It's going to be easy!
     
