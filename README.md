@@ -29,7 +29,7 @@ Before you begin, make sure you have the following:
 
 > **Note:** This guide assumes you have the necessary access and privileges on both devices.
 
-# Forti Configuration
+## Forti Configuration
 
 ## Create IPsec Tunnel
 
