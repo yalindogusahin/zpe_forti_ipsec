@@ -2,6 +2,21 @@
 
 This guide provides step-by-step instructions for configuring an IPsec tunnel between your ZPE device and a FortiGate firewall, ensuring secure communication between the two devices. Additionally, this repository includes an [Ansible playbook](https://www.ansible.com/) that simplifies the process of adding an IKE profile to Nodegrid for establishing the IPsec tunnel.
 
+## Table of Contents
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Step-1: Forti Configuration](#step-1-forti-configuration)
+  - [Create IPsec Tunnel](#1-create-ipsec-tunnel)
+  - [Tunnel Configurations](#2-tunnel-configurations)
+  - [Create Static Route](#3-create-static-route)
+  - [Create IPv4 Policy](#4a-create-ipv4-policy)
+- [Step 2: Nodegrid Configuration](#step-2-nodegrid-configuration)
+  - [Create IKE Profile](#1-create-ike-profile)
+  - [Creating the Tunnel](#2-creating-the-tunnel)
+- [Step 3: Testing the Tunnel](#step-3-testing-the-tunnel)
+- [Useful Documentations](#useful-documentations)
+- [Conclusion](#conclusion)
+
 ## Prerequisites
 
 Before you begin, make sure you have the following:
@@ -14,7 +29,7 @@ Before you begin, make sure you have the following:
 
 > **Note:** This guide assumes you have the necessary access and privileges on both devices.
 
-# Forti Configuration
+# Step-1: Forti Configuration
 
 1 - Create IPsec Tunnel
 
