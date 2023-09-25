@@ -5,7 +5,7 @@ This guide provides step-by-step instructions for configuring an IPsec tunnel be
 ## Table of Contents
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
-- [Step-1: Forti Configuration](#step-1-forti-configuration)
+- [Forti Configuration](#step-1-forti-configuration)
   - [Create IPsec Tunnel](#1-create-ipsec-tunnel)
   - [Tunnel Configurations](#2-tunnel-configurations)
   - [Create Static Route](#3-create-static-route)
@@ -29,9 +29,9 @@ Before you begin, make sure you have the following:
 
 > **Note:** This guide assumes you have the necessary access and privileges on both devices.
 
-# Step-1: Forti Configuration
+# Forti Configuration
 
-1 - Create IPsec Tunnel
+## Create IPsec Tunnel
 
 Go Under VPN::IPsec Wizard
  
