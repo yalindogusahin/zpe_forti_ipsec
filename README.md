@@ -9,7 +9,7 @@ This guide provides step-by-step instructions for configuring an IPsec tunnel be
   - [Create IPSec Tunnel](#create-ipsec-tunnel-on-fortigate-fw)
   - [Tunnel Configurations](#tunnel-configurations-on-fortigate-fw)
   - [Create Static Route](#create-static-route-on-fortigate-fw)
-  - [Create IPv4 Policy](#4a-create-ipv4-policy)
+  - [Create IPv4 Policies](#create-ipv4-policy-and-reverse-policy)
 - [Nodegrid Configuration](#nodegrid-configuration)
   - [Create IKE Profile](#1-create-ike-profile)
   - [Creating the Tunnel](#2-creating-the-tunnel)
